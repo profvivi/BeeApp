@@ -38,7 +38,7 @@ body {
     
 }
 body > h1 {
-    color: rgb(13, 12, 12);
+    color: var(--cor5);
     font-family: var(--font-destaque);
     text-align: center;
     font-size: 3em;
