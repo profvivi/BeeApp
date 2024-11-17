@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    
+        <h2>Cadastro</h2>
+        <br><br>
+        Nome: <br>
+        <input type="text" name="nome" id="idnome"><br>
+        Idade: <br> <input type="number" name="idade" id="ididade"><br>
+        Nº da Turma: <br> <input type="number" name="turma" id="idturma"> <br>
+        Usuário: <br> <input type="text" name="us" id="idusuario"> <br>
+        Senha: <br> <input type="password" name="sen" id="idsenha"> <br>
+        E-mail: <br> <input type="text" name="email" id="idemail"> <br>
+        <input type="button" value="Salvar" onclick="salvar()"> <br>
+
+    <script>
+        function salvar() {
+            var nome = window.document.querySelector('input#idnome')
+            
+            window.location.href = "principal.html";
+        }
+    </script>
+
+    
+</body>
+</html>
