@@ -246,7 +246,7 @@ footer {
     padding: 5px;
 } 
 
-@media and(min-width:220px) (max-width: 560px) {
+@media (min-width:220px) and (max-width: 560px) {
     p {
       pading: 1em;
 
