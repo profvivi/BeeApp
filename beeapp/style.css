@@ -247,7 +247,7 @@ footer {
 } 
 
 @media and (max-width: 560px) {
-    p {
+    header > p {
         width: 100%;
 
         
