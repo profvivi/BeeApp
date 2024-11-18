@@ -248,8 +248,7 @@ footer {
 
 @media (max-width: 560px) {
     p {
-      text-align: center;
-      padding-right: 40px;
+        font-size: 12px;
 
     }
 }
