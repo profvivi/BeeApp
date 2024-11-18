@@ -246,12 +246,10 @@ footer {
     padding: 5px;
 } 
 
-@media and (max-width: 480px) {
+@media and(min-width:220px) (max-width: 560px) {
     p {
-        font-size: clamp(1em, 1em + 1vw, 1.5em);
+      pading: 1em;
 
     }
-    header{
-        width: 100%;
-    }
+   
 }
