@@ -246,7 +246,7 @@ footer {
     padding: 5px;
 } 
 
-@media and (max-width: 380px) {
+@media and (max-width: 780px) {
     p {
       font-size: clamp(1.75em, 1em + 3vw, 2.5em)
 
