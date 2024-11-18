@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    
+    <main>
+        <div class="botao">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="button" value="S" onclick=""> &nbsp;
+            <input type="button" value="E" onclick=""> &nbsp;
+            <input type="button" value="N" onclick=""> &nbsp;
+            <input type="button" value="A" onclick=""> &nbsp;
+            <input type="button" value="C" onclick=""> &nbsp;
+
+        </div>
+        <div class="selecao">
+            <h2>Queremos ajudá-lo na escolha do seu curso!
+            </h2>
+            <p>Informe seu nome e responda todas as questões propostas com uma alternativa:
+            </p>
+            Digite seu nome:
+            <input type="text" name="fnome" id="fnome">
+            <br>
+            1- Na escola, você prefere assuntos ligados <br>
+            <input type="radio" name="p1" id="p1" value="1" checked>
+            <label for="pa">Arte, esportes e atividades extracurriculares</label> <br>
+            <input type="radio" name="p1" id="p1" value="2">
+            <label for="sa">Biologia e genética</label> <br>
+            <input type="radio" name="p1" id="p1" value="3">
+            <label for="ta">Ciências humanas, idiomas</label> <br>
+            <input type="radio" name="p1" id="p1" value="4">
+            <label for="">Ciências exatas</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            2- Você prefere levar sua vida <br>
+            <input type="radio" name="p2" id="p2" value="1" checked>
+            <label for="pa">Com pouca rotina e poucas regras</label> <br>
+            <input type="radio" name="p2" id="p2" value="2">
+            <label for="sa">Com regras definidas e disciplina</label> <br>
+            <input type="radio" name="p2" id="p2" value="3">
+            <label for="ta">Interagindo com todo tipo de pessoa</label> <br>
+            <input type="radio" name="p2" id="p2" value="4">
+            <label for="">Com muita autonomia: "na sua"</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            3- Você se descreveria como uma pessoa <br>
+            <input type="radio" name="p3" id="p3" value="1" checked>
+            <label for="pa">Impulsiva e um tanto aventureira</label> <br>
+            <input type="radio" name="p3" id="p3" value="2">
+            <label for="sa">Cautelosa e responsável</label> <br>
+            <input type="radio" name="p3" id="p3" value="3">
+            <label for="ta">Entusuasmada e muito amiga</label> <br>
+            <input type="radio" name="p3" id="p3" value="4">
+            <label for="">Calma e diferente da maioria</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            4- Você se considera uma pessoa <br>
+            <input type="radio" name="p4" id="p4" value="1" checked>
+            <label for="pa">Prática e hábil para improvisar</label> <br>
+            <input type="radio" name="p4" id="p4" value="2">
+            <label for="sa">Batalhadora, que sabe o que quer</label> <br>
+            <input type="radio" name="p4" id="p4" value="3">
+            <label for="ta">Preocupada com questões humanas</label> <br>
+            <input type="radio" name="p4" id="p4" value="4">
+            <label for="">Capacitada para criar e inventar</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            5- De quais características suas você sente orgulho <br>
+            <input type="radio" name="p5" id="p5" value="1" checked>
+            <label for="pa">Audácia e facilidade para lidar com o inesperado</label> <br>
+            <input type="radio" name="p5" id="p5" value="2">
+            <label for="sa">Senso de dever e capacidade de dar exemplo</label> <br>
+            <input type="radio" name="p5" id="p5" value="3">
+            <label for="ta">Idealismo e disposição para compreender os outros</label> <br>
+            <input type="radio" name="p5" id="p5" value="4">
+            <label for="">Engenhosidade e rapidez mental</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            6- Constuma confiar mais em <br>
+            <input type="radio" name="p6" id="p6" value="1" checked>
+            <label for="pa">Percepção imediata</label> <br>
+            <input type="radio" name="p6" id="p6" value="2">
+            <label for="sa">Costumes e tradições</label> <br>
+            <input type="radio" name="p6" id="p6" value="3">
+            <label for="ta">Intuição, ou seja, decisões por meio de experiências anteriores</label> <br>
+            <input type="radio" name="p6" id="p6" value="4">
+            <label for="">Razão e lógica</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            7- Quase sempre, você gosta de  <br>
+            <input type="radio" name="p7" id="p7" value="1" checked>
+            <label for="pa">Causar impacto: os "holofotes" o atraem</label> <br>
+            <input type="radio" name="p7" id="p7" value="2">
+            <label for="sa">Ser visto como membro valioso de um grupo</label> <br>
+            <input type="radio" name="p7" id="p7" value="3">
+            <label for="ta">Sonhar em transformar o mundo</label> <br>
+            <input type="radio" name="p7" id="p7" value="4">
+            <label for="">Desvendar um enigma ou inventar algo útil</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            8- A vida é mais interessante quando você tem <br>
+            <input type="radio" name="p8" id="p8" value="1" checked>
+            <label for="pa">Desafios, situações cambiantes</label> <br>
+            <input type="radio" name="p8" id="p8" value="2">
+            <label for="sa">Segurança, emprego garantido, integração social</label> <br>
+            <input type="radio" name="p8" id="p8" value="3">
+            <label for="ta">Possibilidade de fazer algo para mudar o mundo</label> <br>
+            <input type="radio" name="p8" id="p8" value="4">
+            <label for="">Possibilidade de ir além do que já é conhecido </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            9- Você gostaria de ser <br>
+            <input type="radio" name="p9" id="p9" value="1" checked>
+            <label for="pa">Um craque na profissão que escolher</label> <br>
+            <input type="radio" name="p9" id="p9" value="2">
+            <label for="sa">Um executivo bem-sucedido</label> <br>
+            <input type="radio" name="p9" id="p9" value="3">
+            <label for="ta">Um profissional de prestígio </label> <br>
+            <input type="radio" name="p9" id="p9" value="4">
+            <label for="">Um especialista ou um cientista </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            10- Você é muito bom lidando com <br>
+            <input type="radio" name="p10" id="p10" value="1" checked>
+            <label for="pa">Ferramentas, instrumentos e equipamentos </label> <br>
+            <input type="radio" name="p10" id="p10" value="2">
+            <label for="sa">Controle do tempo, comando e execução</label> <br>
+            <input type="radio" name="p10" id="p10" value="3">
+            <label for="ta">Pessoas de todos os níveis sociais e culturais </label> <br>
+            <input type="radio" name="p10" id="p10" value="4">
+            <label for="">Sistemas e construção (material ou mental) </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            11- Antes de agir, você analisa <br>
+            <input type="radio" name="p11" id="p11" value="1" checked>
+            <label for="pa">As vantagens imediatas </label> <br>
+            <input type="radio" name="p11" id="p11" value="2">
+            <label for="sa">As experiências já vividas </label> <br>
+            <input type="radio" name="p11" id="p11" value="3">
+            <label for="ta">As possibilidades futuras </label> <br>
+            <input type="radio" name="p11" id="p11" value="4">
+            <label for="">As condições e consequências </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            12- Gosta quando as pessoas <br>
+            <input type="radio" name="p12" id="p12" value="1" checked>
+            <label for="pa">O surpreendem com um presente </label> <br>
+            <input type="radio" name="p12" id="p12" value="2">
+            <label for="sa">Expressam gratidão por algo que fez </label> <br>
+            <input type="radio" name="p12" id="p12" value="3">
+            <label for="ta">Reconhecem sua personalidade singular </label> <br>
+            <input type="radio" name="p12" id="p12" value="4">
+            <label for="">Reconhecem sua inteligência </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            13- Você constuma abraçar um novo projeto <br>
+            <input type="radio" name="p13" id="p13" value="1" checked>
+            <label for="pa">Com a cara e a coragem </label> <br>
+            <input type="radio" name="p13" id="p13" value="2">
+            <label for="sa">Guiado pela experiência </label> <br>
+            <input type="radio" name="p13" id="p13" value="3">
+            <label for="ta">Confiando na intiuição e na criatividade </label> <br>
+            <input type="radio" name="p13" id="p13" value="4">
+            <label for="">Depois de verificar todas as variáveis </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            14- Geralmente, você prefere agir <br>
+            <input type="radio" name="p14" id="p14" value="1" checked>
+            <label for="pa">No calor do momento </label> <br>
+            <input type="radio" name="p14" id="p14" value="2">
+            <label for="sa">Com segurança e conforme o costume </label> <br>
+            <input type="radio" name="p14" id="p14" value="3">
+            <label for="ta">Quando está inspirado </label> <br>
+            <input type="radio" name="p14" id="p14" value="4">
+            <label for="">Quando um problema o desafia </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            15- Você fica motivado quando  <br>
+            <input type="radio" name="p15" id="p15" value="1" checked>
+            <label for="pa">Tem a oportunidade de superar obstáculos </label> <br>
+            <input type="radio" name="p15" id="p15" value="2">
+            <label for="sa">Experimenta estabilidade na vida profissional, ou seja, sabe em que terreno está pisando</label> <br>
+            <input type="radio" name="p15" id="p15" value="3">
+            <label for="ta">Harmonia e inspiração guiam a atividade </label> <br>
+            <input type="radio" name="p15" id="p15" value="4">
+            <label for="">Há liberdade para projetar o futuro</label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+            16- Em atividades em grupo, você prefere <br>
+            <input type="radio" name="p16" id="p16" value="1" checked>
+            <label for="pa"> </label>As desafiadoras, que exigem ação rápida <br>
+            <input type="radio" name="p16" id="p16" value="2">
+            <label for="sa"> </label>Administrar os recursos disponíveis <br>
+            <input type="radio" name="p16" id="p16" value="3">
+            <label for="ta"></label>Motivar as pessoas para darem o melhor de si <br>
+            <input type="radio" name="p16" id="p16" value="4">
+            <label for="">Destacar logo o que não funciona </label> <br>
+            <input type="button" value="Confirmar"><br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>    
+                    <aside>
+                <h3>Resultado: </h3>
+                <p>       </p>
+                
+                <p>Clique no botão "Resultado" para conferir o seu!!!</p>
+
+
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>&copy;Projeto Canvas - Londrina Norte</p>
+    </footer>
+</body>
+</html>

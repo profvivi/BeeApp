@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    <h2>Atitude Colaborativa</h2><br>
+    <section>
+    <h4>Respontas as perguntas abaixo:</h4><br><br>
+    1- Você conseguiu colaborar bem com os membros da sua equipe durante a atividade? <br>
+    <input type="radio" name="p1" id="p1sim" checked> Sim &nbsp;<input type="radio" name="p1" id="p1nao">
+    Não<br><br>
+    2- Houve  boa comunicação entre os membros da equipe durante a dinâmica? <br>
+    <input type="radio" name="p2" id="p2sim" checked> Sim &nbsp;<input type="radio" name="p2" id="p2nao">
+    Não<br><br>
+    3- Você se sentiu mais confortável em falar com os menbros da equipe após a dinâmica? <br>
+    <input type="radio" name="p3" id="p3sim" checked> Sim &nbsp;<input type="radio" name="p3" id="p3nao">
+    Não<br><br>
+    4- A atividade  ajudou a melhorar a confiança entre os membros da equipe? <br>
+    <input type="radio" name="p4" id="p4sim" checked> Sim &nbsp;<input type="radio" name="p4" id="p4nao">
+    Não<br><br>
+    5- A atividade foi útil para entender como os outros percebem suas qualidades? <br>
+    <input type="radio" name="p5" id="p5sim" checked> Sim &nbsp;<input type="radio" name="p5" id="p5nao">
+    Não<br><br>
+    6- A dinâmica ajudou a aumentar sua autoestima? <br>
+    <input type="radio" name="p6" id="p6sim" checked> Sim &nbsp;<input type="radio" name="p6" id="p6nao">
+    Não<br><br>
+    7- Em uma escala de 0 a 5, como você avaliaria sua habiliadade trabalhar em equipe? (0 = nenhuma habilidade - 5 = habilidade excelente) <br>
+    0<input type="range" name="slider" id="slider1" min="0" max="5" value="3" />10 <br><br>
+    8- Em escala de 0 a 5, qual foi a clareza de comunicação dentro do seu grupo? <br>
+    0<input type="range" name="slider" id="slider2" min="0" max="5" value="3" />10 <br> <br>
+</section>
+    <div class="cam">
+        <form action="">
+            <input type="button" value="Enviar" onclick="atitd()">
+        </form>
+    
+</div>
+    
+
+    <script>
+        function atitd() {
+            window.location.href = "principal.html";
+        }
+    </script>
+    
+</body>
+</html>

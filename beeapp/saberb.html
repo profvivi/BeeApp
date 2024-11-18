@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    <h2>Saber</h2><br><br>
+    <h3>Você é Visual, Auditivo ou Cinestésico?</h3><br>
+    <section>
+    <h4>Responda SIM ou Não para as perguntas da  SÉRIE B</h4><br>
+    1- Gosto de longas conversas <br>
+    <input type="radio" name="p1" id="p1sim" checked> Sim &nbsp;<input type="radio" name="p1" id="p1nao"> Não<br> <br>
+    2- Gosto de programas de entrevistas, na rádio e na TV <br>
+    <input type="radio" name="p2" id="p2sim" checked> Sim &nbsp;<input type="radio" name="p2" id="p2nao"> Não <br> <br>
+    3- Sou bom ouvinte <br>
+    <input type="radio" name="p3" id="p3sim" checked> Sim &nbsp;<input type="radio" name="p3" id="p3nao"> Não<br> <br>
+    4- Prefiro os noticiários de rádio e TV do que jornais e revistas <br>
+    <input type="radio" name="p4" id="p4sim" checked> Sim &nbsp;<input type="radio" name="p4" id="p4nao"> Não<br> <br>
+    5- Sinto-me incomodado(a) quando percebo um barulho diferente ou meu redor <br>
+    <input type="radio" name="p5" id="p5sim" checked> Sim &nbsp;<input type="radio" name="p5" id="p5nao"> Não<br> <br>
+    6- Quando ouço música presto muita atenção à letra <br>
+    <input type="radio" name="p6" id="p6sim" checked> Sim &nbsp;<input type="radio" name="p6" id="p6nao"> Não<br> <br>
+    7- Posso dizer muito sobre alguém somente pelo seu tom de voz <br>
+    <input type="radio" name="p7" id="p7sim" checked> Sim &nbsp;<input type="radio" name="p7" id="p7nao"> Não<br> <br>
+    8- Prefiro fazer uma palestra a escrever sobre o assunto <br>
+    <input type="radio" name="p8" id="p8sim" checked> Sim &nbsp;<input type="radio" name="p8" id="p8nao"> Não<br><br>
+    9- As pessoas dizem que, às vezes, falo demais <br>
+    <input type="radio" name="p9" id="p9sim" checked> Sim &nbsp;<input type="radio" name="p9" id="p9nao"> Não<br><br>
+    10- Costumo conversar comigo mesmo com meu gato/cachorro <br>
+    <input type="radio" name="p10" id="p10sim" checked> Sim &nbsp;<input type="radio" name="p10" id="p10nao"> Não<br><br>
+</section>
+    <div class="cam">
+        <form action="">
+            <input type="button" value="Enviar" onclick="sabe()">
+        </form>
+    
+</div>
+    
+    
+    <script>
+        function sabe() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const visual = urlParams.get('visual');
+            var contsb = 0;
+
+            for (let i = 1; i <= 10; i++) {
+            var checkbox = document.querySelector(`input[name="p${i}"]`);
+            if (checkbox && checkbox.checked) {
+                contsb++;
+            }
+            }
+
+            var auditivo = contsb;
+            //window.alert(visual, auditivo)
+            window.location.href = `saberc.html?visual=${visual}&amp;auditivo=${auditivo}`;
+
+        }
+    </script>
+</body>
+</html>
