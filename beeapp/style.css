@@ -246,7 +246,7 @@ footer {
     padding: 5px;
 } 
 
-@media (max-width: 560px) {
+@media and (max-width: 560px) {
     p {
         max-width: 600px;
 
