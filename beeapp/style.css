@@ -248,7 +248,8 @@ footer {
 
 @media (max-width: 560px) {
     p {
-        padding-right: 6%;
-        
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+
     }
 }
