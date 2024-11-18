@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    <br>
+    <h2>Saber</h2><br>
+    <h3>Você é Visual, Auditivo ou Cinestésico?</h3>
+    <h4>Responda SIM ou Não para as perguntas da  SÉRIE A</h4><br><br>
+
+    1- Escrevo listas daquilo que tenho que fazer <br>
+    <input type="radio" name="p1" id="p1sim" checked> Sim &nbsp;<input type="radio" name="p1" id="p1nao">
+    Não<br><br>
+    2- Realizo coisas desde que as instruções recebidas sejam bem detalhadas <br>
+    <input type="radio" name="p2" id="p2sim" checked> Sim &nbsp;<input type="radio" name="p2" id="p2nao"> Não <br> <br>
+    3- Gosto de fazer palavras cruzadas <br>
+    <input type="radio" name="p3" id="p3sim" checked> Sim &nbsp;<input type="radio" name="p3" id="p3nao"> Não<br> <br>
+    4- Gosto de exposições e museus <br>
+    <input type="radio" name="p4" id="p4sim" checked> Sim &nbsp;<input type="radio" name="p4" id="p4nao"> Não<br><br>
+    5- Localizo-me com facilidade, numa cidade nova, ao usar o GPS <br>
+    <input type="radio" name="p5" id="p5sim" checked> Sim &nbsp;<input type="radio" name="p5" id="p5nao"> Não<br> <br>
+    6- Todos os meses assisto vários filmes <br>
+    <input type="radio" name="p6" id="p6sim" checked> Sim &nbsp;<input type="radio" name="p6" id="p6nao"> Não<br> <br>
+    7- Não tenho boa impressão de alguém, se estiver malvestido <br>
+    <input type="radio" name="p7" id="p7sim" checked> Sim &nbsp;<input type="radio" name="p7" id="p7nao"> Não<br> <br>
+    8- Gosto de observar as pessoas <br>
+    <input type="radio" name="p8" id="p8sim" checked> Sim &nbsp;<input type="radio" name="p8" id="p8nao"> Não<br> <br>
+    9- Acho que flores realmente embelezam a casa e o escritório <br>
+    <input type="radio" name="p9" id="p9sim" checked> Sim &nbsp;<input type="radio" name="p9" id="p9nao"> Não<br> <br>
+    10- No trânsito ou andando pela rua, costuma prestar atenção em placas e paisagens <br>
+    <input type="radio" name="p10" id="p10sim" checked> Sim &nbsp;<input type="radio" name="p10" id="p10nao"> Não<br> <br>
+    <input type="button" value="Enviar" onclick="saba()">
+
+    <script>
+        function saba() {
+            var contsa = 0;
+
+            for (let i = 1; i <= 10; i++) {
+            var checkbox = document.querySelector(`input[name="p${i}"]`);
+            if (checkbox && checkbox.checked) {
+                contsa++;
+            }
+            }
+
+            var visual = contsa;
+            //window.alert(visual)
+            window.location.href = `saberb.html?visual=${visual}`;
+
+
+        }
+    </script>
+
+</body>
+</html>

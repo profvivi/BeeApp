@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('http://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/*
+#c5ebd6
+#83e1ad
+#eddc84
+#1a5c37
+#06edle criar uma referência uma pseudo callase chamada root (raiza da árvore)- uma área para declarar suas varáveis e toda variável começa com dois traços  
+
+*/
+:root {
+    --cor0: hwb(232 74% 5%);
+    --cor1: hwb(232 65% 3%);
+    --cor2: hsl(222, 90%, 72%);
+    --cor3: #5f80f7;
+    --cor4: #315df9;
+    --cor5: #062361;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+/* inserir a configuração globaldepois */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    
+}
+body > h1 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);   
+}
+body > h2 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+body > h3 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 18px;
+}
+body > h4 {
+    color: rgb(13, 12, 12);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+a.externo::after { /*todo link externo, depois dele inserir um símbolo   */
+    content: '\00A0\1F517';
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5)); /*degrade da cor 3 até cor 5*/
+    min-height: 40px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+header > h2 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.334); /*sombra */
+
+}
+
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+.btn {
+    width: 100%;
+    text-align: center;
+}
+form input[type=button] {
+    padding: 20px 20px;
+    border: 0;
+    border-radius: 10px;
+    background: #062361;
+    color: white;
+    cursor: pointer;
+}
+
+
+div.areas {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+div.areae {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+div.arean {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+div.areaa {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+div.areac {
+    font: normal 28pt Arial;
+    background: #062361;
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+div.logo {
+    display: table-cell;
+    float: left;
+    margin-top: -30px;
+}
+
+div.texto {
+    color: white;
+    display: table-cell;
+    float: left;
+    width: 500px;
+    margin-top: -20px;
+    margin-left: 20px;
+
+}
+
+div.botao {
+    background-color: var(--cor5);
+    
+    padding: 20px;
+    padding-bottom: 10px; /*pode ir mudando para ver se some a barra   */
+    position: relative;
+    margin-bottom: -10px; /*espaço abaixo do video   */
+    margin: 10px 5px 10px 5px;
+    
+    
+    
+}
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px; /*espaço abaixo do video   */
+    margin: 0px -20px 30px -20px;
+    padding: 20px; /*agora inserir div video iframe  com position, vai zuar e colocamos padding-bottom */
+    padding-bottom: 59%; /*pode ir mudando para ver se some a barra   */
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%; /*distancia acima   */
+    left: 5%; /*distancia a direita   */
+    width: 90%; /*não colocar 100% quando deseja a borda   */
+    height: 90%;
+}
+aside { /*aside = conteúdo periférico   */
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px; /*para aredondar as pontas   */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.283);
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;/*creuceu para fora e retirou o arredondamento */
+    border-radius: 10px 10px 0px 0px; /*arrendamento em cima direita e esquerda, em baixo 0   */
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*trocar a bolinha emojipedia(retirar U+ e 00a0 espaço sem quebra   */
+    list-style-position: inside; /*para colocar as bolinhas do lado de dentro   */
+    columns: 2;
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}

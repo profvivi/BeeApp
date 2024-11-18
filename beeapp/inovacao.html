@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="abelha-64px.png" alt="logo equipe"> 
+        </div>
+        <div class="texto">
+        <h2>Jornada Interativa de Aprendizagem</h2>
+        </div>
+
+    </header>
+    <h2>Núcleo de Inovação</h2><br>
+    
+    <h4>Em escala de 0 a 10, responda as questões abaixo:</h4><br><br>
+    1- Quão eficaz você acha que a atividade foi para melhorar sua compreensão sobre a postura ética no supermercado? <br>
+    0<input type="range" name="slider" id="slider1" min="0" max="10" value="5" />10 <br><br>
+    2- Quão útil foi o auxílio do ChatGPT na criação e desenvolvimento do seu projeto? (cartazes, música e clipe, ou teatro) <br>
+    0<input type="range" name="slider" id="slider2" min="0" max="10" value="5" />10 <br><br>
+    3- Quanto você considera importante a utilização de IA associada a metodologias ativas em sala de aula e o quanto atividades como esta impactam em sua aprendizagem e satisfação? <br>
+    0<input type="range" name="slider" id="slider3" min="0" max="10" value="5" />10 <br><br>
+    4- Quanto esta atividade lhe proporcionou reflexôes e/ou soluções inovadoras quanto à  sua postura ética no supermercado? <br>
+    0<input type="range" name="slider" id="slider4" min="0" max="10" value="5" />10 <br><br>
+    5- Escreva uma FRASE que resuma a importância da postura ética no ambiente profissional. <br>
+    <input type="text" name="frase" id="idfrase"> <br><br>
+    <input type="button" value="Enviar" onclick="inovar()">
+    
+    <script>
+        function inovar() {
+            window.location.href = "principal.html";
+        }
+    </script>
+    
+</body>
+</html>
