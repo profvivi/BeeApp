@@ -64,9 +64,7 @@ body > h2 {
     width: 100%;
 }
 
-.botoes{
-    display: block;
-}
+
 body > h3 {
     color: rgb(13, 12, 12);
     font-family: var(--fonte-padrao);
