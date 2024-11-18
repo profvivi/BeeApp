@@ -248,7 +248,12 @@ footer {
 
 @media and (max-width: 560px) {
     p {
-        max-width: 600px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        
+        text-align: left;
 
     }
 }
