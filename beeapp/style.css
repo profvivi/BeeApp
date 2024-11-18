@@ -248,7 +248,7 @@ footer {
 
 @media and (max-width: 560px) {
     p {
-        font-size: 3vmin;
+        font-size: 1rem;
 
     }
 }
