@@ -248,7 +248,7 @@ footer {
 
 @media (min-width:220px) and (max-width: 560px) {
     p {
-      pading: 1em;
+      padding-right: 1em;
 
     }
    
