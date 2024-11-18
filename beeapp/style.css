@@ -56,7 +56,16 @@ body > h2 {
 }
 
 .botao{
-    
+    display: flex; 
+    justify-content: center; 
+    padding: 1em; 
+    font-size: 18px; 
+    align-items: center; 
+    width: 100%;
+}
+
+.botoes{
+    display: block;
 }
 body > h3 {
     color: rgb(13, 12, 12);
