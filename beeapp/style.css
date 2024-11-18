@@ -249,10 +249,8 @@ footer {
 @media and (max-width: 560px) {
     header > p {
         width: 100%;
-
-        
-        
         text-align: left;
+        margin-right: 3rem;
 
     }
 }
