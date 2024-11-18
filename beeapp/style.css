@@ -248,9 +248,7 @@ footer {
 
 @media and (max-width: 480px) {
     p {
-        width: 80%;
-       
-        margin: 40px;
+        font-size: clamp(1em, 1em + 1vw, 1.5em);
 
     }
 }
