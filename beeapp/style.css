@@ -246,7 +246,7 @@ footer {
     padding: 5px;
 } 
 
-@media and (max-width: 560px) {
+@media and (max-width: 380px) {
     header > p {
       
         text-align: left;
