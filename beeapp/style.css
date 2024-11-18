@@ -248,7 +248,9 @@ footer {
 
 @media (max-width: 560px) {
     p {
-      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 20px;
 
     }
 }
